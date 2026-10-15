@@ -1,0 +1,14 @@
+
+{
+  "name": "watan-craft-2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Watan Craft 2 Minecraft server website with interactive 3D skin viewer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

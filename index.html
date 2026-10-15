@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a14">
+  <meta name="description" content="وب‌سایت رسمی سرور Minecraft Watan Craft 2">
+  <title>Watan Craft 2 | سرور ماینکرافت</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- نمایشگر مدل سه‌بعدی -->
+  <script type="module"
+    src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.0.0/dist/model-viewer.min.js">
+  </script>
+  <script src="./script.js" defer></script>
+  <script type="module" src="./viewer.js"></script>
+</head>
+
+<body>
+  <header class="site-header" id="home">
+    <div class="container nav-container">
+      <a class="brand" href="#home">
+        <img src="./images/watan-craft.png"
+             alt="لوگوی Watan Craft 2"
+             class="brand-logo">
+        <span>
+          <strong>WATAN CRAFT 2</strong>
+          <small>دنیای ماجراجویی تو!</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle"
+              type="button" aria-label="باز کردن منو"
+              aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="#home">خانه</a>
+        <a href="#server">اتصال به سرور</a>
+        <a href="#features">امکانات</a>
+        <a href="#character">اسکین سازنده سرور</a>
+        <a href="#rules">قوانین</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <span class="eyebrow">MINECRAFT MULTIPLAYER</span>
+          <h1>به <span>Watan Craft 2</span> خوش آمدی!</h1>
+          <p>
+            ماجراجویی کن، بساز، زنده بمان و با دوستانت
+            دنیای ماینکرافت را تجربه کن.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#server">
+              ورود به سرور
+            </a>
+            <a class="button button-outline" href="#character">
+              دیدن اسکین سازنده سرور
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <img src="./images/watan-craft.png"
+               alt="Watan Craft 2"
+               class="hero-logo"
+               onerror="this.style.display='none'">
+          <div class="hero-tag">BUILD • EXPLORE • SURVIVE</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="server">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">JOIN OUR WORLD</span>
+          <h2>به سرور ما وصل شو</h2>
+          <p>آدرس سرور را کپی کن و وارد ماینکرافت شو.</p>
+        </div>
+
+        <div class="server-card">
+          <div class="server-brand">
+            <img src="./images/watan-craft.png"
+                 alt="لوگوی سرور"
+                 class="server-logo"
+                 onerror="this.style.display='none'">
+            <div>
+              <h3>Watan Craft 2</h3>
+              <p>آدرس سرور ماینکرافت</p>
+            </div>
+          </div>
+
+          <div class="address-row">
+            <code id="server-address">watancraft2.aternos.me:16079</code>
+            <button class="button button-primary copy-button"
+                    type="button" data-copy="server-address">
+              کپی آدرس
+            </button>
+          </div>
+
+          <p class="notice">
+            اگر آدرس یا پورت سرور در Aternos تغییر کرده،
+            مقدار بالا را با آدرس فعلی سرورت هماهنگ کن.
+          </p>
+          <p class="copy-status" id="copy-status"
+             role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">WHY WATAN CRAFT?</span>
+          <h2>امکانات سرور</h2>
+          <p>دنیای خودت را بساز و با دوستانت ماجراجویی کن.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <span class="feature-icon">⛏️</span>
+            <h3>ساخت‌وساز</h3>
+            <p>خانه، قلعه و سازه‌های مورد علاقه‌ات را بساز.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">🌍</span>
+            <h3>جهان ماینکرافت</h3>
+            <p>به گشت‌وگذار و کشف محیط‌های تازه بپرداز.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">🤝</span>
+            <h3>بازی با دوستان</h3>
+            <p>در دنیای مشترک با دیگر بازیکنان همراه شو.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">🏆</span>
+            <h3>ماجراجویی</h3>
+            <p>منابع جمع کن، پیشرفت کن و تجربه تازه‌ای داشته باش.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="character">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">3D CHARACTER VIEWER</span>
+          <h2>اسکین سازنده سرور</h2>
+          <p>
+            با ماوس شخصیت را بچرخان؛ با چرخ ماوس بزرگ‌نمایی کن.
+            در موبایل هم می‌توانی با انگشت آن را حرکت بدهی.
+          </p>
+        </div>
+
+        <div class="character-layout">
+          <div class="viewer-card">
+            <div class="viewer-topbar">
+              <span class="live-dot"></span>
+              <span>اسکین MOSTAFA_AFK</span>
+              <span class="viewer-hint">سازنده AFK_GROUP</span>
+            </div>
+
+            <div class="model-stage">
+              <model-viewer
+                id="watan-model"
+                src="./models/watan-skin.gltf"
+                alt="مدل سه‌بعدی اسکین Watan Craft 2"
+                camera-controls
+                touch-action="pan-y"
+                interaction-prompt="auto"
+                shadow-intensity="1"
+                exposure="1"
+                environment-image="neutral"
+                camera-orbit="0deg 75deg auto"
+                field-of-view="30deg"
+                loading="eager">
+              </model-viewer>
+
+              <div id="model-status" class="model-status"
+                   role="status" aria-live="polite">
+                در حال بارگذاری مدل سه‌بعدی...
+              </div>
+            </div>
+
+            <div class="viewer-controls">
+              <span>🖱️ کلیک کن و بکش تا بچرخد</span>
+              <span>🔍 اسکرول برای بزرگ‌نمایی</span>
+            </div>
+          </div>
+
+          <aside class="character-info">
+            <div class="character-image-frame">
+              <img src="./images/my-skin.png"
+                   alt="تصویر اسکین من"
+                   class="character-image"
+                   onerror="this.style.display='none'">
+            </div>
+            <h3>اسکین اختصاصی من</h3>
+            <p>
+              مدل سه‌بعدی از فایل اسکین صادرشده ساخته شده است.
+              اگر مدل نمایش داده نشد، مسیر فایل و بافت‌های آن را بررسی کن.
+            </p>
+            <a class="button button-outline" href="#server">
+              اتصال به سرور
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="rules">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">PLAY FAIR</span>
+          <h2>قوانین سرور</h2>
+          <p>برای تجربه بهتر، به دیگر بازیکنان احترام بگذار.</p>
+        </div>
+
+        <div class="rules-grid">
+          <article class="rule-card">
+            <span>01</span>
+            <div>
+              <h3>احترام به بازیکنان</h3>
+              <p>با دیگر بازیکنان محترمانه رفتار کن.</p>
+            </div>
+          </article>
+          <article class="rule-card">
+            <span>02</span>
+            <div>
+              <h3>تقلب ممنوع</h3>
+              <p>از هک و ابزارهای ناعادلانه استفاده نکن.</p>
+            </div>
+          </article>
+          <article class="rule-card">
+            <span>03</span>
+            <div>
+              <h3>تخریب ممنوع</h3>
+              <p>ساختمان‌ها و وسایل دیگران را خراب نکن.</p>
+            </div>
+          </article>
+          <article class="rule-card">
+            <span>04</span>
+            <div>
+              <h3>همکاری</h3>
+              <p>برای ساخت یک جامعه بهتر همکاری کن.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="./images/watan-craft.png" alt=""
+             onerror="this.style.display='none'">
+        <span>Watan Craft 2</span>
+      </div>
+      <p>ساخته‌شده برای دوست‌داران ماینکرافت ⛏️</p>
+      <a href="#home">بازگشت به بالا ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
